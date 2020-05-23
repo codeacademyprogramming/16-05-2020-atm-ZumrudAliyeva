@@ -13,7 +13,6 @@ namespace test_atm
 
             bool backToStart = true;
 
-
             User[] users = new User[5];
             users[0] = new User("Tom", "Ellis") { PAN = "123456", PIN = "1111", CVC = "345", ExpireDate = "12/21", Balance = 9 };
             users[1] = new User("Benedict", "Cumberbach") { PAN = "123456", PIN = "2222", CVC = "345", ExpireDate = "12/21", Balance = 400 };
@@ -26,6 +25,7 @@ namespace test_atm
             {
                 Console.WriteLine("Enter Your 4 Digit Pin ");
                 string pin = Console.ReadLine();
+
                 for (int i = 0; i < users.Length; i++)
                 {
                     if (pin == users[i].PIN)
@@ -93,18 +93,19 @@ namespace test_atm
                                             Console.WriteLine("Balansinizda kifayet qeder vesait yoxdur");
                                         }
                                         break;
-                                    default:
-                                        break;
                                 }
                                 break;
-                            default:
-                                break;
                         }
+
+                        break;
+                    }
+
+                    else if (i == users.Length - 1)
+                    {
+                        Console.WriteLine("Bu PIN koda aid kart tapilmadi.");
                     }
                 }
-                        Console.WriteLine("Bu PIN koda aid kart tapilmadi.");
             }
-            backToStart = false;
         }
     }
 
@@ -112,7 +113,7 @@ namespace test_atm
 
     public abstract class Card
     {
-       
+
         public string PAN { get; set; }
         public string PIN { get; set; }
         public string CVC { get; set; }
