@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\test atm\bin\Debug\test atm.exe.config
+C:\Users\HP\source\repos\test atm\bin\Debug\test atm.exe
+C:\Users\HP\source\repos\test atm\bin\Debug\test atm.pdb
+C:\Users\HP\source\repos\test atm\obj\Debug\test atm.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\test atm\obj\Debug\test atm.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\test atm\obj\Debug\test atm.exe
+C:\Users\HP\source\repos\test atm\obj\Debug\test atm.pdb
